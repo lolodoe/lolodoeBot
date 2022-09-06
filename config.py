@@ -1,11 +1,10 @@
 from aiogram import Bot, Dispatcher
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
-from decouple import config
+import decouple
 
 storage = MemoryStorage()
 
-TOKEN = config('TOKEN')
+TOKEN = decouple.config('TOKEN')
 bot = Bot(TOKEN)
 dp = Dispatcher(bot=bot, storage=storage)
 ADMIN = [5319788233]
-URL =
