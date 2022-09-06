@@ -18,9 +18,9 @@ async def on_startup(_):
 async def on_shutdown(dp):
     await bot.delete_webhook()
 
+inline.register_handler_inline(dp)
 client.register_handlers_client(dp)
 notification.register_handler_notification(dp)
-inline.register_inline_handler(dp)
 fsmAdminMenu.register_handlers_fsmAdminMenu(dp)
 callback.register_handlers_callback(dp)
 admin.register_handlers_admin(dp)
