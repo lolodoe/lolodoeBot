@@ -24,7 +24,7 @@ notification.register_handler_notification(dp)
 fsmAdminMenu.register_handlers_fsmAdminMenu(dp)
 callback.register_handlers_callback(dp)
 admin.register_handlers_admin(dp)
-extra.register_handlers_extra(dp)
+
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
